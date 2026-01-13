@@ -55,6 +55,7 @@ coverage/
 
 # Vercel
 .vercel
+VERCEL_DEPLOY.md
 
 # Package manager locks (optional - uncomment if you want to ignore)
 # package-lock.json

@@ -2,7 +2,7 @@
 
 A modern, full-stack freelancing marketplace platform built with the MERN stack. GigFlow enables fluid user roles where any user can post gigs (as a client) or bid on gigs (as a freelancer).
 
-## 🚀 Features
+## Features
 
 - **User Authentication**: Secure JWT-based authentication with HTTP-Only cookies
 - **Gig Management**: Post, browse, and search gigs with real-time updates
@@ -12,7 +12,7 @@ A modern, full-stack freelancing marketplace platform built with the MERN stack.
 - **Dark Theme UI**: Modern, responsive black/charcoal theme
 - **My Bids Dashboard**: Track all your bids and their statuses
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** with **Vite** - Fast development and build
@@ -31,13 +31,13 @@ A modern, full-stack freelancing marketplace platform built with the MERN stack.
 - **Bcryptjs** - Password hashing
 - **Cookie Parser** - HTTP cookie handling
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js (v16 or higher)
 - MongoDB (local or MongoDB Atlas account)
 - npm or yarn
 
-## 🔧 Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
@@ -80,7 +80,7 @@ A modern, full-stack freelancing marketplace platform built with the MERN stack.
    - **Frontend**: http://localhost:5173
    - **Backend**: http://localhost:5000
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 serviceHive/
@@ -120,7 +120,7 @@ serviceHive/
 └── README.md
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - Register new user
@@ -138,7 +138,7 @@ serviceHive/
 - `GET /api/bids/my/bids` - Get current user's bids
 - `PATCH /api/bids/:bidId/hire` - Hire a freelancer (atomic transaction)
 
-## 🎯 Key Features Explained
+## Key Features Explained
 
 ### Atomic Hiring Transaction
 The hiring process uses MongoDB transactions to ensure data consistency:
@@ -158,7 +158,7 @@ The hiring process uses MongoDB transactions to ensure data consistency:
 - Protected routes with authentication middleware
 - CORS configured for secure cross-origin requests
 
-## 🧪 Development Scripts
+## Development Scripts
 
 ### Root Level
 - `npm run dev` - Start both frontend and backend
@@ -174,51 +174,6 @@ The hiring process uses MongoDB transactions to ensure data consistency:
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 
-## 🚢 Deployment
 
-### Quick Deploy to Vercel
-
-**Frontend (Vercel):**
-1. Push code to GitHub
-2. Import project in Vercel dashboard
-3. Set root directory to `client`
-4. Add environment variables:
-   - `VITE_API_URL` = Your backend URL
-   - `VITE_SOCKET_URL` = Your backend URL
-5. Deploy!
-
-**Backend (Railway/Render):**
-1. Deploy `server` folder
-2. Add environment variables (see DEPLOYMENT.md)
-3. Update `FRONTEND_URL` with your Vercel URL
-
-📖 **Full deployment guide**: See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
-
-## 📝 Environment Variables
-
-See `server/.env.example` for required environment variables.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📄 License
-
-This project is part of a Full Stack Development Internship Assignment.
-
-## 👤 Author
-
-Built as part of the ServiceHive internship program.
-
-## 📧 Contact
-
-For questions or issues, please contact:
-- Email: ritik.yadav@servicehive.tech
-- CC: hiring@servicehive.tech
-
----
 
 **Note**: This is a demonstration project showcasing full-stack development skills including authentication, database relationships, state management, and real-time features.
