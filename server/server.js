@@ -36,10 +36,12 @@ const corsOptions = {
     if (process.env.NODE_ENV === 'development') {
       return callback(null, true);
     }
-    // In production, check against allowed origins
-    if (allowedOrigins.some(allowed => origin.includes(allowed) || origin === allowed)) {
+    // In production, check against allowed origins (exact match or includes)
+    if (allowedOrigins.length === 0 || allowedOrigins.some(allowed => origin === allowed || origin.startsWith(allowed))) {
       callback(null, true);
     } else {
+      console.log('CORS blocked origin:', origin);
+      console.log('Allowed origins:', allowedOrigins);
       callback(new Error('Not allowed by CORS'));
     }
   },
